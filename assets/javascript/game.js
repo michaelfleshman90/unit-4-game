@@ -1,5 +1,9 @@
 var game = {
-    
+    playerfighter: function() {
+        $("#characterChoice").click(function(){
+            $(this).appendTo(".attackarea");
+    });
+    }
 }
 
 var obiWanKenobi = {
@@ -26,3 +30,8 @@ var countDuku = {
     counterAttackPower: 15,
     
 }
+//player select character
+$(document).ready(function() {
+    game.playerfighter();
+    
+});

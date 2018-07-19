@@ -1,4 +1,47 @@
-.container {
-    background-image: url("starwarsbackground.JPEG");
+body {
+    height: 100%;
+}
+.container-fluid {
+    background-image: url("../images/backgroundimg.JPEG");
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.card-img-top {
+    height: 200px;
+    width: 200px;
+}
+h1 {
+    text-align: center;
+    text-emphasis: bold;
+    color: blue;
+    background-color: none;
+}
+h2 {
+    text-align: left;
+    text-emphasis: bold;
+    color: red;
 
+}
+h3 {
+    text-align: left;
+    text-emphasis: bold;
+    color: red;
+    
+}
+#attackButton {
+    margin-left: 16px;
+}
+.card-title {
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px;
+    color: red;
+}
+.card-body {
+    margin: 0px;
+    padding: 0px;
 }

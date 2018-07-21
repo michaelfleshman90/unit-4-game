@@ -20,6 +20,10 @@ var game = {
     attack: function() {
         $("#attackButton").on("click", function() {
             if(game.characterSelected != "" && game.enemyFighter != "") {
+                attackDamage = game.characterSelected.attackPower;
+                enemyFighterNewHealth = game.characterSelected.attackPower - game.enemyFighter.healthPoints;
+                counterAttackDamage = game.enemyFighter.counterAttackPower - game.characterSelected.healthPoints;
+                characterSelectedNewHealth = counterAttackDamage;
                 
             }
     });
